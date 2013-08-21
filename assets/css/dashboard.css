@@ -1,0 +1,7 @@
+#wrapper{
+background-color: background-image: linear-gradient(bottom, rgb(30,85,149) 18%, rgb(8,37,69) 63%);
+background-image: -o-linear-gradient(bottom, rgb(30,85,149) 18%, rgb(8,37,69) 63%);
+background-image: -moz-linear-gradient(bottom, rgb(30,85,149) 18%, rgb(8,37,69) 63%);
+background-image: -webkit-linear-gradient(bottom, rgb(30,85,149) 18%, rgb(8,37,69) 63%);
+background-image: -ms-linear-gradient(bottom, rgb(30,85,149) 18%, rgb(8,37,69) 63%);;
+}
