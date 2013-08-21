@@ -26,20 +26,20 @@
 
   //<--Homepage product flip back and forth-->
     $(document).on('click', '#collared', function(){
-        $('#image').attr('src','../assets/img/collared_front.png');
-        $('#tt-mask').attr('src' , '../assets/img/collared_mask_front.png');
+        $('#image').attr('src','<?=base_url() ?>/assets/img/collared_front.png');
+        $('#tt-mask').attr('src' , '<?=base_url() ?>/assets/img/collared_mask_front.png');
     });
     $(document).on('click', '#tshirt', function(){
-        $('#image').attr('src','../assets/img/tshirt_front.png');
-        $('#tt-mask').attr('src' , '../assets/img/tshirt_mask_front.png');
+        $('#image').attr('src','<?=base_url() ?>/assets/img/tshirt_front.png');
+        $('#tt-mask').attr('src' , '<?=base_url() ?>/assets/img/tshirt_mask_front.png');
     });
     $(document).on('click', '#sweatshirt', function(){
-        $('#image').attr('src','../assets/img/sweatshirt_front.png');
-        $('#tt-mask').attr('src' , '../assets/img/sweatshirt_mask_front.png');
+        $('#image').attr('src','<?=base_url() ?>/assets/img/sweatshirt_front.png');
+        $('#tt-mask').attr('src' , '<?=base_url() ?>/assets/img/sweatshirt_mask_front.png');
     });
     $(document).on('click', '#hat', function(){
-        $('#image').attr('src','../assets/img/hat_front.png');
-        $('#tt-mask').attr('src' , '../assets/img/hat_mask_front.png');
+        $('#image').attr('src','<?=base_url() ?>/assets/img/hat_front.png');
+        $('#tt-mask').attr('src' , '<?=base_url() ?>/assets/img/hat_mask_front.png');
     });
     $(document).on('.hover', '#image', function(){
         $('image').addclass('.img-swap');

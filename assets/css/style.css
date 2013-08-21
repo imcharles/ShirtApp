@@ -25,6 +25,9 @@ h2,h3,h4,p{
 	height:80px;
 	
 }
+.navbar-brand:hover, .navbar-brand:focus, .navbar-inverse .navbar-brand:focus{
+	text-decoration:none;
+}
 .navbar-inverse .navbar-brand{
 	font-size: 45px;
 	font-weight:lighter;
