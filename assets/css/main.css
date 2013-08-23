@@ -1,0 +1,28 @@
+	body {
+	background: url(../preview/bg.png) repeat;
+}
+
+.api-buttons {
+	margin-top: 20px;
+}
+
+.api-buttons > a {
+	margin-right: 10px;
+}
+
+.price {
+	font-size: 25px !important;
+	line-height: 26px !important;
+}
+
+.fpd-product-container {
+	height: 620px !important;
+}
+
+#shirtbuilder_modal .modal-body {
+	padding-top: 0px !important;
+}
+
+#shirtbuilder_modal #shirtbuilder_title {
+	margin-top: 15px;
+}

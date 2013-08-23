@@ -15,9 +15,4 @@ class Main extends CI_Controller {
 		// saves the session data to the $this->user_session variable
 		$this->user_session = $this->session->userdata('user_session');
 	}
-	public function index()
-	{
-		$this->load->view('header');
-		$this->load->view('footer');
-	}
 }

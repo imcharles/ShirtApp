@@ -18,12 +18,29 @@
           <!--login boxes-->
           <?php
               // check if there are errors for login
-              if(isset($login_errors))
+              if($login_errors)
               {
-                // display login errors
-                echo $login_errors;
-              }  
-            ?>  
+                echo    "<div class='alert alert-danger span3'>
+                            ". $login_errors ."
+                        </div>";
+              } 
+
+              // check if there are errors for registration
+              if(isset($register_errors) && $register_errors)
+              {
+                // displays registration errors
+                echo    "<div class='alert alert-danger span3'>
+                            ". $register_errors ."
+                        </div>";
+              }
+              if(isset($register_success) && $register_success)
+              {
+                // echoes success message once the user has successfully registered
+                echo    "<div class='alert alert-success span3'>
+                            ". $register_success ."
+                        </div>";
+              }
+            ?>
             <form action="/user/process_login" method="post" class="pull-right">
                 <input type="hidden" name="action" value="login" />
                 <input type="text" name="email" placeholder="Email" />
@@ -41,20 +58,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <h1 class="modal-title">Create an Account</h1>
         </div>
-        <div class="modal-body">  
-            <?php
-              // check if there are errors for registration
-              if(isset($register_errors))
-              {
-                // displays registration errors
-                echo $register_errors;
-              }
-              if(isset($register_success))
-              {
-                // echoes success message once the user has successfully registered
-                echo $register_success;
-              }
-            ?>
+        <div class="modal-body">
               <form action="/user/process_register" method="post">
                 <input type="hidden" name="action" value="register"/>
                 <label for="first_name">First Name:  </label>
